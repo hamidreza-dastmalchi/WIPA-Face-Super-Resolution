@@ -35,6 +35,9 @@ The [Celebrity dataset](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) used 
 - Put training images in “.\data\train” directory.
 - Put celeba test images in “.\data\test\celeba” , lfw test images in “.\data\test\lfw” and helen test images in “.\data\test\helen”.
 
+## Pretrained Weights
+The pretrained weights can be downloaded [here]()
+
 ## Code
 The codes are consisted of two main files: the **main.py** file for training the network and the **test.py** file for evaluating the algorithm with different metrics like PSNR, SSIM and verification rate.
 ### Training 
@@ -72,3 +75,4 @@ In addition, we have developed a “demo.py” python file to demonstrate the re
 >>python demo.py
 ```
 By default, the images of “./sample_images/gt” folder will be super-resolved by the wavelet-integrated network by scale factor of 8 and the results will be saved in the “./sample_images/sr” folder. To change the scaling factor, one must alter not only the –scale option but also the corresponding –wi_net argument to import the relevant pretrained state dictionary.
+
