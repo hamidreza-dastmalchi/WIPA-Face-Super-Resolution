@@ -42,3 +42,13 @@ To train the network, simply run this code in Anaconda terminal:
 ```
 >>python main.py
 ```
+We designed different input arguments for controlling the training procedure. Please use --help command to see the available input arguments. to train the wavelet-integrated network through GPU with scale factor of 8, without having pre-trained model coefficients, with learning rate of 5e-5, you can simply run the following code in the terminal:
+```
+python main.py –scale 8 –wi_net “” –disc_net “” –wavelet_integrated True –lr 0.00005
+```
+
+### Testing
+for evaluating (testing), simply run the following code in terminal:
+```
+>>python test.py
+```
