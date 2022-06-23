@@ -38,4 +38,7 @@ The [Celebrity dataset](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) used 
 ## Code
 The codes are consisted of two main files: the **main.py** file for training the network and the **test.py** file for evaluating the algorithm with different metrics like PSNR, SSIM and verification rate.
 ### Training 
-And for evaluating (testing), kindly run the following code in terminal:
+To train the network, simply run this code in Anaconda terminal:
+```
+>>python main.py
+```
