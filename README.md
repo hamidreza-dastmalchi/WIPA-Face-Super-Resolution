@@ -28,3 +28,4 @@ high-quality images while maintaining identity.
 <p align="center">
   <img width="500" src="./block-diagram/WIPA-Training-Scheme.jpg">
 </p>
+<br/>wef
