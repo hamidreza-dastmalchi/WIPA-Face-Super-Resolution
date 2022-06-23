@@ -1,6 +1,6 @@
 # WIPA: Wavelet-integrated, Identity Preserving, Adversarial network for Face Super-resolution
 This repository incluse the Pytorch implementation of the WIPA Face Super-Resolutio algorithm proposed in paper [Super-resolution of very low-resolution face images with a wavelet integrated, identity preserving, adversarial network](https://www.sciencedirect.com/science/article/abs/pii/S0923596522000753?dgcid=coauthor).
-You can download the pre-proof version of the article [here]([https://drive.google.com/file/d/1GHWiCcScPF1PK4xozoRf-88Rytom-kvl/view](https://drive.google.com/file/d/1GHWiCcScPF1PK4xozoRf-88Rytom-kvl/view?usp=sharing)) but  please refer to the origital manuscript for citation.
+You can download the pre-proof version of the article [here](https://drive.google.com/file/d/1GHWiCcScPF1PK4xozoRf-88Rytom-kvl/view?usp=sharing) but  please refer to the origital manuscript for citation.
 ## Citation
 If you find this work useful for your research, please consider citing our paper:
 ```
