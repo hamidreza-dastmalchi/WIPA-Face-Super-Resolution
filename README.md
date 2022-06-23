@@ -31,9 +31,11 @@ high-quality images while maintaining identity. The training scheme of the Wavel
 
 ## Datasets
 The [Celebrity dataset](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) used for training the proposed FH algorithm. The database contains more than 200 K different face images under significant pose, illumination, and expression variations. In our experiment, two distinct groups of 20 thousand images are randomly selected from the CelebA dataset as our train and test dataset. In order to test the generalizing capacity of the method, we have further evaluated the performance of the proposed approach on [FW](http://vis-www.cs.umass.edu/lfw/) and [Helen dataset](http://www.ifp.illinois.edu/~vuongle2/helen/) too. All the testing and training images are roughly aligned using similarity transformation with landmarks detected by the well-known MTCNN network. The images are rescaled to the size of 128 × 128. The corresponding LR images are also constructed by down-sampling the HR images using bicubic interpolation. The experiments are accomplished in two different **scaling** factors of 8X and 16X with LR images of size 16 × 16 and 8 × 8, respectively.
-
-## Code
-The codes are consisted of two main files: the **main.py** file for training the network and the **test.py** file for evaluating the algorithm with different metrics like PSNR, SSIM and verification rate. Before starting to train or test the network, you must put the training images in the corresponding folders:
+ **Before starting to train or test the network**, you must put the training images in the corresponding folders:
 - Put training images in “.\data\train” directory.
 - Put celeba test images in “.\data\test\celeba” , lfw test images in “.\data\test\lfw” and helen test images in “.\data\test\helen”.
 
+## Code
+The codes are consisted of two main files: the **main.py** file for training the network and the **test.py** file for evaluating the algorithm with different metrics like PSNR, SSIM and verification rate.
+### Training 
+And for evaluating (testing), kindly run the following code in terminal:
