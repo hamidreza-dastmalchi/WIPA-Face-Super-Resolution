@@ -42,7 +42,10 @@ To train the network, simply run this code in Anaconda terminal:
 ```
 >>python main.py
 ```
-We designed different input arguments for controlling the training procedure. Please use --help command to see the available input arguments. to train the wavelet-integrated network through GPU with scale factor of 8, without having pre-trained model coefficients, with learning rate of 5e-5, you can simply run the following code in the terminal:
+We designed different input arguments for controlling the training procedure. Please use --help command to see the available input arguments. 
+
+####Example: 
+For example, to train the wavelet-integrated network through GPU with scale factor of 8, without having pre-trained model coefficients, with learning rate of 5e-5, you can simply run the following code in the terminal:
 ```
 python main.py –scale 8 –wi_net “” –disc_net “” –wavelet_integrated True –lr 0.00005
 ```
@@ -52,8 +55,14 @@ for evaluating (testing), simply run the following code in terminal:
 ```
 >>python test.py
 ```
-We have also developed different options as input arguments to control the testing procedure. You can evaluate psnr, ssim, fid score and also verification rate by the “test.py” file. To do this, you have to put the test images in the corresponding folders in data root at first. 
-Example code: In order to evaluate the psnr and ssim of a wavelet-integrated pretrained model in scale of 8 and save the super-resolved results in folder of “./results/celeba”, you can write the following code in the command window:
+We have also developed different options as input arguments to control the testing procedure. You can evaluate psnr, ssim, fid score and also verification rate by the “test.py” file. To do this, you have to put the test images in the corresponding folders in data root at first.
+
+####Example: 
+For example, to evaluate the psnr and ssim of a wavelet-integrated pretrained model in scale of 8 and save the super-resolved results in folder of “./results/celeba”, you can write the following code in the command window:
 ```
-python test.py --wavelet_integrated True --scale 8 --wi_net gen_net_8x --save_flag True --save_folder ./results/celeba --metrics psnr ssim
+>> test.py --wavelet_integrated True --scale 8 --wi_net gen_net_8x --save_flag True --save_folder ./results/celeba --metrics psnr ssim
+```
+To estimate the fid score, you have to produce the super-resolved test images first. Therefore, if you have not generated the super-resolved images, you have to call –metrics psnr ssim with fid simultaneously. You can also add the acc option to the metrics to evaluate the verification rate of the model:
+```
+>>python test.py --wavelet_integrated True --scale 8 --wi_net gen_net_8x --save_flag True --save_folder ./results/celeba --metrics psnr ssim fid acc
 ```
