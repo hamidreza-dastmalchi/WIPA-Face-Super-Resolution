@@ -36,7 +36,7 @@ The [Celebrity dataset](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) used 
 - Put celeba test images in “.\data\test\celeba” , lfw test images in “.\data\test\lfw” and helen test images in “.\data\test\helen”.
 
 ## Pretrained Weights
-The pretrained weights can be downloaded [here]()
+The pretrained weights can be downloaded [here](https://drive.google.com/drive/folders/18V1kPDHW6F05L0xOOODNHZHO566SA6iC?usp=sharing).
 
 ## Code
 The codes are consisted of two main files: the **main.py** file for training the network and the **test.py** file for evaluating the algorithm with different metrics like PSNR, SSIM and verification rate.
