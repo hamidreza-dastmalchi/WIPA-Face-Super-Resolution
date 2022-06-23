@@ -35,6 +35,6 @@ The [Celebrity dataset](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) used 
 ## Code
 The codes are consisted of two main files: the **main.py** file for training the network and the **test.py** file for evaluating the algorithm with different metrics like PSNR, SSIM and verification rate. Before starting to train or test the network, you must put the training images in the corresponding folders:
 ```
-- Put training images in “.\data\train” directory.
-- Put celeba test images in “.\data\test\celeba” , lfw test images in “.\data\test\lfw” and helen test images in “.\data\test\helen”.
+-Put training images in “.\data\train” directory.
+-Put celeba test images in “.\data\test\celeba” , lfw test images in “.\data\test\lfw” and helen test images in “.\data\test\helen”.
 ```
