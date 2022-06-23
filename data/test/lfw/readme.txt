@@ -1,0 +1,1 @@
+put all the 128*128 lfw testing images, which are coarsely aligned, in this folder.

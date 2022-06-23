@@ -1,0 +1,1 @@
+put all the 128*128 lfw training folder images in this folder. The images can be downloaded from LFW official website
