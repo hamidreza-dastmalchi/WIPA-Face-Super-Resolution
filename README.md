@@ -16,7 +16,7 @@ url = {https://www.sciencedirect.com/science/article/pii/S0923596522000753},
 author = {Hamidreza Dastmalchi and Hassan Aghaeinia},
 keywords = {Super-resolution, Wavelet prediction, Generative Adversarial Networks, Face Hallucination, Identity preserving, Perceptual quality},
 ```
-# WIPA Algorithm
+## WIPA Algorithm
 we present Wavelet
 Prediction blocks attached to a Baseline CNN network to predict wavelet missing details of facial images. The
 extracted wavelet coefficients are concatenated with original feature maps in different scales to recover fine
