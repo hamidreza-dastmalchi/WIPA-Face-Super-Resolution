@@ -66,3 +66,9 @@ To estimate the fid score, you have to produce the super-resolved test images fi
 ```
 >>python test.py --wavelet_integrated True --scale 8 --wi_net gen_net_8x --save_flag True --save_folder ./results/celeba --metrics psnr ssim fid acc
 ```
+### Demo 
+In addition, we have developed a “demo.py” python file to demonstrate the results of some sample images in the “./sample_images/gt” directory. To run the demo file, simply write the following code in terminal:
+```
+>>python demo.py
+```
+By default, the images of “./sample_images/gt” folder will be super-resolved by the wavelet-integrated network by scale factor of 8 and the results will be saved in the “./sample_images/sr” folder. To change the scaling factor, one must alter not only the –scale option but also the corresponding –wi_net argument to import the relevant pretrained state dictionary.
