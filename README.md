@@ -24,8 +24,9 @@ details. Unlike other wavelet-based FH methods, this algorithm exploits the wave
 complementary information to facilitate the hallucination task. We introduce a **wavelet prediction loss** to push
 the network to generate wavelet coefficients. In addition to the wavelet-domain cost function, a combination of
 **perceptual**, **adversarial**, and **identity loss** functions has been utilized to achieve low-distortion and perceptually
-high-quality images while maintaining identity.
+high-quality images while maintaining identity. The training scheme of the Wavelet-Integrated network with the combination of five loss terms is shown as below:
 <p align="center">
   <img width="500" src="./block-diagram/WIPA-Training-Scheme.jpg">
 </p>
-<br/>wef
+## Datasets
+<br/> The [Celebrity dataset](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) s used for training the proposed FH algorithm. The database contains more than 200 K different face images under significant pose, illumination, and expression variations. In our experiment, two distinct groups of 20 thousand images are randomly selected from the CelebA dataset as our train and test dataset. In order to test the generalizing capacity of the method, we have further evaluated the performance of the proposed approach on [FW](http://vis-www.cs.umass.edu/lfw/) and [Helen dataset](http://www.ifp.illinois.edu/~vuongle2/helen/) too. All the testing and training images are roughly aligned using similarity transformation with landmarks detected by the well-known MTCNN network. The images are rescaled to the size of 128 × 128. The corresponding LR images are also constructed by down-sampling the HR images using bicubic interpolation. The experiments are accomplished in two different scaling factors of 8X and 16X with LR images of size 16 × 16 and 8 × 8, respectively.
