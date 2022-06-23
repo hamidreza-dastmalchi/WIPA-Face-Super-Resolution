@@ -25,7 +25,6 @@ complementary information to facilitate the hallucination task. We introduce a *
 the network to generate wavelet coefficients. In addition to the wavelet-domain cost function, a combination of
 **perceptual**, **adversarial**, and **identity loss** functions has been utilized to achieve low-distortion and perceptually
 high-quality images while maintaining identity.
-<br/>![this is an image](./sample_images/gt/GT1.jpg)
 <p align="center">
-  <img width="600" height="200" src="./sample_images/gt/GT1.jpg">
+  <img scale=0.5 src="./sample_images/gt/GT1.jpg">
 </p>
