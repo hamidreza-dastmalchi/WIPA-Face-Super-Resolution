@@ -26,5 +26,5 @@ the network to generate wavelet coefficients. In addition to the wavelet-domain 
 **perceptual**, **adversarial**, and **identity loss** functions has been utilized to achieve low-distortion and perceptually
 high-quality images while maintaining identity.
 <p align="center">
-  <img scale=6 src="./block-diagram/WIPA-Training-Scheme.jpg.jpg">
+  <img scale=6 src="./block-diagram/WIPA-Training-Scheme.jpg">
 </p>
