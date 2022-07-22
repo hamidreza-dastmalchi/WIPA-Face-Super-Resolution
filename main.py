@@ -20,6 +20,7 @@ import FNet
 
 
 parser=argparse.ArgumentParser(description="input parameters for WIDA algorithm")
+#commit3
 parser.add_argument("--epoch_num", type=int, default=200, help="number of training epochs")
 parser.add_argument("--batch_size", type=int, default=32, help="batch size of training procedure")
 parser.add_argument("--num_workers", type=int, default=2, help="number of cpu workers for data loading")
